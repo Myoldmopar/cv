@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}  % Style options: 'casual', 'classic', 'banking', etc.
+\moderncvcolor{blue}     % Color options: 'blue', 'orange', 'green', 'red', etc.
+
+\usepackage[scale=0.83]{geometry}
+\usepackage{natbib}
+\usepackage{enumitem}
+\bibliographystyle{unsrtnat}
+
+% Personal data
+\name{Edwin}{Lee}
+\email{edwin.lee@nrel.gov}
+\phone[mobile]{+1~(720)~402~2473}
+\social[github]{myoldmopar}
+\address{25095 Emerald Way}{Cashion, OK, USA}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Summary}
+Engineer and software developer with deep experience in simulation, numerical modeling, and scientific tool development. Skilled in building robust, open-source tools in Python and C++ for domains like ground heat exchanger design, energy systems, and embedded monitoring. Equally comfortable architecting large-scale backend systems, designing efficient data models, or writing low-level hardware interface code. Known for pragmatic solutions, thoughtful software structure, and effective collaboration across disciplines.
+
+\section{Education}
+\cventry{2013}{Doctor of Philosophy, Mechanical Engineering}{Oklahoma State University}{}{GPA: 4.0}{Dissertation: A Generalized Pipe Heat Transfer Model for Whole Building Simulation Applications}
+\cventry{2008}{Master of Science, Mechanical Engineering}{Oklahoma State University}{}{GPA: 4.0}{Thesis: Development, Implementation, and Verification of a Buried Pipe Model in EnergyPlus}
+\cventry{2006}{Bachelor of Science, Mechanical Engineering}{Oklahoma State University}{}{GPA: 3.52}{Focus: Building science, fluid flow, heat transfer, and HVAC system design and simulation}
+
+\section{Experience}
+\cventry{May 2013 \\ to \\ Present}{Research Engineer}{National Renewable Energy Laboratory}{Golden, CO \& Remote}{}{
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Contributed to the Technology Performance Exchange (TPEx) via Data Entry Form development, dataset processing, and development of the logic and scripts to convert TPEx datasets into components on the Building Component Library
+	\item Began leading technical development of EnergyPlus, overseeing the technical changes accompanying the translation from FORTRAN to C++, and StarTeam to GitHub
+  \end{itemize}
+}
+\cventry{June 2006 \\ to \\ May 2013}{Graduate Research Assistant}{Oklahoma State University}{}{Stillwater, OK}{
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item A complete re-write of the EnergyPlus central plant simulation, including solution algorithms, pump model re-work, and updating component model design  
+	\item Developed a generalized horizontal ground heat exchanger model that includes interaction with a basement zone, specifically for use with foundation heat exchangers
+	\item Performed experimental measurement and modeling of transport delay phenomena in piping systems
+	\item Worked closely with the Center for the Built Environment at University of California, Berkeley, providing simulation support for Underfloor Air Distribution System research with EnergyPlus
+  \end{itemize}
+}
+\cventry{Fall 2007\\ and \\ Summer 2009}{Engineering Consultant}{Oak Ridge National Laboratory}{}{Oak Ridge, TN}{
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Utilized EnergyPlus to investigate wall constructions for residential applications
+	\item Established workflows in VBA, Fortran, and VB.Net to execute parametric runs
+	\item Constructions included frame walls, solid wood walls, and phase change materials
+  \end{itemize}
+}
+\cventry{Summer 2005}{Engineering Intern}{Specific Systems}{}{Tulsa, OK}{
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Introduced to design and manufacturing of modular HVAC equipment
+	\item Designed and fabricated parts
+	\item Performed various mechanical and structural analysis on designs
+	\item Aided in the construction of a thermal test chamber
+  \end{itemize}
+}
+
+\section{Skills}
+\cvitem{Platforms}{Highly experienced developing on Linux, Windows, and Mac}
+\cvitem{Scripting}{Python, Ruby, Batch, Bash, VBA}
+\cvitem{Compiling}{Python, C++, C, Fortran, VB.Net, Modelica}
+\cvitem{Toolchains}{Experienced with GCC, Clang, and MSVC builds, along with CMake and Ninja}
+\cvitem{Development}{Familiar with all major build systems and IDEs}
+\cvitem{Web}{HTML, CSS, and Javascript, Django client and server code, APIs and databases}
+\cvitem{GUIs}{Python frameworks including tkinter, pygobject, PyQT, and Wx; SFML and QT on C++}
+\cvitem{Tools}{Git, Docker, GitHub (Actions, Projects, Review), Virtual Machines}
+\cvitem{Office}{Expert with Word, Excel, Powerpoint, as well as FOSS and Google alternatives}
+\cvitem{Writing}{Highly experienced with the LaTeX ecosystem, including BibTex and auxiliary tools}
+\cvitem{Auxiliary}{Experienced with EES, MathCAD, R, Fluent, AutoCAD, Octave/Matlab}
+
+\nocite{*}
+\renewcommand{\refname}{Publications, Reports, and Proceedings}
+\bibliography{mybib}  % Points to your .bib file
+
+\section{ASHRAE Membership \& Activities}
+\cvitem{2005-2013}{Student Member}
+\cvitem{2007-2012}{Student Branch President}
+\cvitem{2013-Present}{Active Member in TC 4.7 and TC 9.13}
+\cvitem{2019-2023}{TC 4.7 Simulation and Component Modeling Subcommittee Chair}
+
+\section{Honors \& Awards}
+\cvitem{}{Phi Kappa Phi Honor Society \textbar{} Superior Scholarship}
+\cvitem{}{A. B. Still Memorial Scholarship \textbar{} Performance in Mechanical Engineering}
+\cvitem{}{Two-time ASHRAE Memorial Scholarship \textbar{} Performance and Research Interests}
+\cvitem{}{Conoco-Phillips Memorial Scholarship \textbar{} Performance in Graduate Studies}
+\cvitem{}{Central Oklahoma ASHRAE Chapter Graduate Fellowship \textbar{} Performance in Graduate Studies}
+
+\section{Projects}
+\cvitem{GHEDesigner}{Open-source Python tool for GHE layout and sizing}
+\cvitem{Freezer Monitor IoT}{Raspberry Pi-based wireless temperature monitoring}
+\cvitem{EnergyPlus Focus}{
+  A graphical tool to improve work-flow during development of EnergyPlus
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Ability to modify reporting frequency/contents to any idf without opening the file
+	\item Test suite tool to provide specific testing of particular file types and configurations
+	\item Parametric tool using the EPMacro preprocessor, allows a generic number of parameters
+	\item Direct access to calculate a mathematical difference summary of two EnergyPlus output files
+	\item An IDF analyzer that compares directories of IDFs
+	\item Ability to run an EnergyPlus simulation on any input file with a single click using a compiled EnergyPlus library
+  \end{itemize}
+}
+\cvitem{Plant Parameter Estimation}{
+  A tool to regress manufacturer's data into EnergyPlus inputs
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Ability to paste in tabulated and correction factor data
+	\item Creates a graphical report showing the resulting parameter quality
+	\item Modular code allows for easy extension for new model types
+	\item Multithreaded code allows the graphical interface to run while background operations perform the curve fit or parameter estimation
+  \end{itemize}
+}  
+\cvitem{Buried Pipe Heat Transfer Tool}{
+  A graphical tool for performing buried pipe simulations
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Formal XML input/output program structure 
+	\item Utilizes the same model that is implemented in EnergyPlus for buried pipe simulations
+	\item Graphical mesh display and temperature/thermal property distribution
+  \end{itemize}
+}  
+\cvitem{Data Acquisition}{
+  A graphical Python application for monitoring data acquisition
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item Monitors data acquisition from a serial/USB port RS-232 device
+	\item Records raw data signals, converts to an analog, and processes into physical measurements where applicable
+	\item Running graphs on-screen show each measurement status
+	\item Implemented on a Linux machine, portable to other operating systems
+  \end{itemize}
+}  
+\cvitem{IDD/IDF Library}{
+  Multi-language library for accessing/manipulating idd and idf files
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+	\item VB.Net based library parses IDD and IDF with extensive error handling
+	\item VB.Net application includes GUI and file comparison tools
+	\item Python cross platform library is lightweight, simple, with minimal error handling
+	\item Python application allows quick processing of well-formed idfs including multiple file comparisons
+  \end{itemize}
+}
+
+\end{document}

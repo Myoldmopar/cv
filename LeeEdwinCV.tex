@@ -19,7 +19,7 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
+\let\nofiles\relax % Void the \nofiles command
 \documentclass{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \setlength{\resumewidth}{7in}
@@ -30,15 +30,16 @@
 \usepackage{multicol}
 \usepackage{booktabs}
 \usepackage{setspace}
+\usepackage[numbers]{natbib}
+\bibliographystyle{plainnat}
 %\usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
 \definecolor{light-gray}{gray}{0.8}
 \newcommand{\sectionRule}{{\vspace{-7pt} \color{light-gray} \hrulefill}}
 \newsectionwidth{0pt} % Stops section indenting
 
 \newcommand{\helv}[1]{{\fontfamily{phv}\selectfont #1}}
-
 
 \makeatletter
 \renewcommand{\paragraph}{%
@@ -60,9 +61,9 @@
 	\vfill
 	\columnbreak
 	\begin{flushright}
-		{405-312-7748}\\	
-		{11934 W. Stanford Dr.}\\
-		{Morrison, CO  80465}\\
+		{720-402-2473}\\	
+		{25095 Emerald Way}\\
+		{Cashion, OK  73016}\\
 		{leeed2001@gmail.com}
 	\end{flushright}
 \end{multicols}
@@ -190,37 +191,15 @@ Specific Systems, Tulsa, OK
 \sectionRule
 \vspace{2pt} % Gap between title and text
 
-{
-\leftskip 0.1in
-\parindent -0.1in
-\parskip 0.075in
-\begin{spacing}{1.1}
+\nocite{*}
+\renewcommand{\refname}{}
+\bibliography{mybib}
 
-Raftery, P., E. Lee, T. Webster, T. Hoyt and F. Bauman.  2014.  \textit{Effects of furniture and contents on peak cooling load}.  Energy and Buildings: 85:445-457.
-
-Studer, D., K. Fleming, E. Lee and W. Livingood.  2014.  \textit{Enabling Detailed Energy Analyses via the Technology Performance Exchange}.  Proceedings of the ACEEE Summer Study, Pacific Grove, CA, USA.
-
-Lee, E., D. Fisher and J. Spitler. 2013. \textit{Efficient Horizontal Ground Heat Exchanger Simulation with Zone Heat Balance Integration}. HVAC\&R Research: 19(3):307-323.
-
-Lee, E. and D. Studer. 2013. \textit{TIP 287: Reducing Technology Evaluation Costs Through a Technology Performance Exchange. Deliverable 2.5: Draft Data Entry Forms}. NREL Report No. TP-5500-60219.
-
-Xiong, Z., E. Lee and D. Fisher. 2013. \textit{Development of a Horizontal Slinky Ground Heat Exchanger Model}. ASHRAE Transactions: 119(2).
-
-Chandrasekharan, R., E. Lee, D. Fisher and P. Deokar. 2013. \textit{An Enhanced Simulation Model for Building Envelopes with Phase Change Materials}. ASHRAE Transactions: 119(2).
-
-Cullin, J., Spitler, J. and E. Lee. 2013. \textit{Preliminary Investigation of the Effect of Horizontal Piping on the Performance of a Vertical Ground Heat Exchanger System}. ASHRAE Transactions: 119(2):302-311.
-
-Webster, T.,  T. Hoyt, E. Lee, A. Daly, D. Feng, F. Bauman, S. Schiavon, K. Ho Lee, W. Pasut and D. Fisher. 2012. \textit{Influence of Design and Operating Conditions on Underfloor Air Distribution (UFAD) System Performance}.  Proceedings of Simbuild 2012, August 1-3, Madison, Wisconsin.
-
-Cullin, J.R., L. Xing, E. Lee, J.D. Spitler and D.E. Fisher. 2012. \textit{Feasibility of Foundation Heat Exchangers In Ground Source Heat Pump Systems In the United States}. ASHRAE Transactions: 118(1):1039-1048.
-
-Kośny, J., D. Yarbrough, W. Miller, P. Childs, J. Atchley, S. Shrestha, E. Kossecka, J. B. Smith, T. Fellinger, E. Lee, and M. Bianchi. 2010. \textit{Theoretical and Experimental Thermal Performance Analysis of Building Shell Components Containing Blown Fiberglass Insulation Enhanced with Phase Change Material (PCM)}. Proceedings of ASHRAE THERM XII, Clearwater, FL. 
-
-Spitler, J., J. Cullin, M. Bernier, M. Kummert, P. Cui, X. Liu, E. Lee, and D. Fisher. 2009. \textit{Preliminary intermodel comparison of ground heat exchanger simulation models}. Proceedings of 11th International Conference on Thermal Energy Storage; Effstock 2009, Stockholm, Sweden.
-
-Cremaschi, L.,and E. Lee. 2008. \textit{Design and Heat Transfer Analysis of a New Psychrometric Environmental Chamber for Heat Pump and Refrigeration Systems Testing}. ASHRAE Transactions 114(2):619-631.
-\end{spacing}
-}
+%{
+%\leftskip 0.1in
+%\parindent -0.1in
+%\parskip 0.075in
+%\begin{spacing}{1.1}
 
 %%----------------------------------------------------------------------------------------
 %%	REFERENCES SECTION
@@ -250,13 +229,13 @@ Cremaschi, L.,and E. Lee. 2008. \textit{Design and Heat Transfer Analysis of a N
 %----------------------------------------------------------------------------------------
 %	MEMBERSHIPS SECTION
 %----------------------------------------------------------------------------------------
-\section{\centerline{\helv{MEMBERSHIPS}}} 
+\section{\centerline{\helv{ASHRAE MEMBERSHIP}}} 
 \sectionRule
 \vspace{-20pt} % Gap between title and text
 
 \begin{center}
-American Society of Heating, Refrigerating, and Air-Conditioning Engineers\\ 
-Student Member 2005-2013; Student Branch President 2007-2012; Member 2013-Present
+Student Member 2005-2013; Student Branch President 2007-2012; Member 2013-Present \\
+TC 4.7 Simulation and Component Modeling Chair 2019-2023
 \end{center}
 
 %----------------------------------------------------------------------------------------
