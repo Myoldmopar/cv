@@ -1,9 +1,12 @@
 ---
 layout: home
-title: An Overview
+title: Edwin An Overview
 ---
 
-## Me.ToList()
+This web-based CV attempts to capture my background, skills, interests, and excitement around coding, software, and building science.
+It is a living document, and will be updated as needed, hopefully with beautiful pictures and plots since it is mostly a lot of text right now.
+
+## Me.Summarize()
 
 - I spent my [school]({{ site.baseurl }}{% link school.md %}) years learning everything I could about heat transfer, fluid flow, building energy, and learning how to apply computational methods to solve problems.
 - I spend my [work]({{ site.baseurl }}{% link career.md %}) hours managing the building energy simulation software [EnergyPlus](https://energyplus.net) for the United States Department of Energy via the National Renewable Energy Laboratory.
@@ -16,7 +19,7 @@ title: An Overview
 ## My Average Work Day
 
 This does not represent any one day in particular, as my work life is very dynamic from day to day and quarter to quarter.
-But it could be a good average representation :)
+But consider it a decent representation of my average day :)
 
 **08:00** – Check up on the EnergyPlus repo  
 > Assess open issues and pull requests, triage requests, prioritize daily activities.

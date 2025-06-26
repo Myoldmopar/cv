@@ -25,3 +25,11 @@ I have been an ASHRAE member since September 2005, and actively attend conferenc
 - During school, I became the secretary, then the president, for the Oklahoma State ASHRAE Student Branch.
 - We held regular meetings, coordinated presentations, attended the local (Central Oklahoma) chapter monthly lunches, and even traveled together for national conferences.
 - Although my schedule now conflicts with my local chapter meetings, I strongly hope to reignite that connection.
+
+## Center for Integrated Building Science
+
+The Center for Integrated Building Science ([CIBS](https://ceat.okstate.edu/mae/research/cibs/)) is a building science research center at Oklahoma State University.
+I have been a part of CIBS since its beginning through NREL's membership.
+The research outcomes from the center include detailed refrigerant, compressor, and coil models, datasets, and impactful conclusions.
+The research also includes ground heat transfer studies for novel heat transfer arrangements, control strategies, and more.
+As a member of the research group, I have focused on ensuring that the research outcomes for detailed building components are made accessible to broader whole building studies.

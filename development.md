@@ -17,6 +17,7 @@ This page offers some targeted highlights of work, or work-tangential, tasks, es
   <li><a href="#world-wide-web">World Wide Web</a> (An Exploration into Front-End Development)</li>
   <li><a href="#versioning">Versioning</a> (Report_final_v2_approved_EL_2025.ods -> Git)</li>
   <li><a href="#dll-heck">DLL Heck</a> (A Deep Dive into Binary Guts)</li>
+  <li><a href="#tech-writing">Tech Writing</a> (Documenting the Documentation)</li>
   <li><a href="#microcontrollers">Microcontrollers</a> (Ending at the Hardware Level)</li>
 </ul>
 
@@ -58,10 +59,10 @@ The project outcomes revealed how to properly handle demand response events to e
 
 For this topic, localization actually means two things.
 
-In some of my software projects, I have implemented localization to allow my software to work with different languages.
+First off, in some of my software projects, I have implemented localization to allow my software to work with different languages.
 This was a fun side experience, and I learned about how to apply encodings and work with partners to implement language changes smoothly within a program.
 
-For EnergyPlus, there was a "localization" step made after the Python API was released, which was really more of a "deglobalization."
+And secondly, for EnergyPlus, there was a "localization" step made after the Python API was released, which was really more of a "deglobalization."
 Prior to the Python work, EnergyPlus made heavy use of global state: 17,000 or so global or static lifetime variables.
 This was fine while EnergyPlus was simply an executable that ran once and ended the process.
 With the API, it was critical to have thread-safety and allow the program to run multiple times in the same process.
@@ -162,6 +163,15 @@ I have had to deal with shared library dependency problems for what seems like m
 I’ve handled cross-platform issues with `.dll`, `.dylib`, and `.so` files since trying to wire up VB.Net to the old EnergyPlus Fortran DLLs. 
 Python integration made things worse? (more interesting?), requiring low-level work to resolve linking issues across platforms.
 I routinely use `otool`, `install_name_tool`, `ldd`, and `Dependency Walker` to inspect and fix runtime dependency chains. Whether it’s CMake’s RPATH quirks or preparing Python native distributions for packaging within EnergyPlus, I have dealt with it.
+
+## Tech Writing
+
+When I took over EnergyPlus development, the documentation was contained in very heavy Word documents that had to be manually merged together whenever changes were made by a developer.
+Since the team was hoping to continue to distribute PDFs with the package, this could not continue, so we evaluated options.
+My initial hope was for LaTeX, because of course I loved it, but also because it would allow multiple collaborators on the source, and also provide meaningful warnings when there were build issues.
+This was originally rejected and we pushed toward a Markdown-based documentation system, which was better than Word, but the idea of basing built PDFs purely off of Markdown was a difficult ask at the time, so this only lasted a couple years.
+I then got my wish of moving toward LaTeX, and it has been a stable solution for nearly ten years.
+Moving forward, I am hopeful that we eliminate the PDFs from each package and instead focus on hosted docs such as ReadTheDocs so that we can actually move back away from LaTeX and rely on industry standard tools for our documentation.
 
 ## Microcontrollers
 
