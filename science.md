@@ -5,10 +5,11 @@ permalink: /science/
 ---
 
 While my day to day life is heavily in producing software, my core education, and academic first love, is building science.
+This pages covers some of my background and project highlights where I was able to utilize my building science credentials.
 
 <ul>
-  <li><a href="#building">Pythonic</a> (A Sumamry of Python Fun)</li>
-  <li><a href="#building">Pythonic</a> (A Sumamry of Python Fun)</li>
+  <li><a href="#a-building-science-foundation">A Building (Science) Foundation</a> (A Transcript)</li>
+  <li><a href="#building-technologies">Pythonic</a> (Things that Spark Joy)</li>
   <li><a href="#shipping">Shipping</a> (A Special Seaside Project)</li>
   <li><a href="#emerald-town">Emerald Town</a> (A Residential Simulation Experience)</li>
 </ul>
@@ -28,7 +29,6 @@ Describe the technologies and physics I feel especially good in.
 As part of the "MPACT" project, I extended EnergyPlus to simulate ships, or in other words, buildings that move and rotate.
 This involved changing the simulation engine for solar and other geometry calculations and also adding a water boundary condition to wall surfaces.
 The project was highly successful, and was accompanied by actual experimental validation of a ship room, where the EnergyPlus model matched very well.
-
 
 ## Emerald Town
 
