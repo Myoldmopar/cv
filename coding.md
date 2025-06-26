@@ -6,7 +6,7 @@ permalink: /coding/
 
 # Coding Experience
 
-I've been coding since 1990.  I have always loved it, and it became a thrill to see how I could put code to use for my day to day life while in college.
+I've been coding since 1990.  I have always loved it, and it became a thrill to see how I could put code to use for my day-to-day life while in college.
 
 ## Early Years
 

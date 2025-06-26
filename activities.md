@@ -10,8 +10,8 @@ I have been an ASHRAE member since September 2005, and actively attend conferenc
 
 ### TC 4.7 Building Energy Modeling
 
-- Since I started with ASHRAE, this subcomittee has (of course) been my primary interest.
-- In 2019 I became the subcommittee chair for the Simulation & Component Models Subcommittee.
+- Since I started with ASHRAE, this subcommittee has (of course) been my primary interest.
+- In 2019, I became the subcommittee chair for the Simulation & Component Models Subcommittee.
 - During a reorganization of the committee, the SCM subcommittee was eliminated, so I took on the role of vice-chair for the new Physics Based Modeling subcommittee.
 
 ### TC 9.13 SPACE

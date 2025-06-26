@@ -4,12 +4,6 @@ title: Output
 permalink: /outputs/
 ---
 
-{% comment %}
-Publications in process: 
-- The interactive indoor-outdoor building energy modeling for enhancing the predictions of urban microclimates and building energy demands, Building and Environment
-- Flexible integration of diverse HVAC technologies in EnergyPlus via Python-enabled workflow
-{% endcomment %}
-
 ## 2020s
 - Bonnema, Eric, Allen, Amy, Mitchell, Matt, and Meyer, Ryan. _Flexible integration of diverse HVAC technologies in EnergyPlus via python-enabled workflows_. Technical report, National Renewable Energy Laboratory, Golden, CO (United States), 2025.
 - Wang, Liping, Wu, Lichen, Norford, Leslie K., Aliabadi, Amir A., and Lee, Edwin. _The interactive indoor-outdoor building energy modeling for enhancing the predictions of urban microclimates and building energy demands_. Building and Environment, 248:111059, 2024.

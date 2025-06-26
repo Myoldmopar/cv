@@ -40,3 +40,15 @@
   .tab-content > div.active {
     display: block;
   }
+
+.self-intro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.self-intro img {
+  width: 150px;
+  border-radius: 50%;
+}

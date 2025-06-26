@@ -4,7 +4,7 @@ title: Science
 permalink: /science/
 ---
 
-While my day to day life is heavily in producing software, my core education, and academic first love, is building science.
+While my day-to-day life is heavily in producing software, my core education, and academic first love, is building science.
 This pages covers some of my background and project highlights where I was able to utilize my building science credentials.
 
 <ul>
@@ -23,18 +23,18 @@ This pages covers some of my background and project highlights where I was able 
 
 I developed a very strong building science foundation while at school, and continue to learn new things regularly.
 Some of my favorite subjects when I was in school include:
-* Thermodynamics 1: This is where I first found success in college.  After struggling early on, this class was a major turning point, and I knew I had found my subject.
-* Thermodynamics 2: This is where I met Dr. Dan Fisher, who showed me I could be very excited about this industry, and he became my life-long mentor right in that moment in Engineering South.
-* Computational Heat Transfer: Although I had been using coding for my school work for a while, this class reinforced the way I could use coding for physical modeling applications.
-* Indoor Environmental System Design 1, 2, and Advanced Thermal Systems: The design aspects in these classes taught me real-world details and assumptions when sizing an HVAC system or pumping configuration that are still key when I am writing or reviewing models or code.
-* Advanced Thermodynamics (3): In this class, we were taught how to go back to the fundamentals of thermodynamics to dive deeper than ever into the theory, which solidified my understanding of many thermodynamic topics.
+* **Thermodynamics 1**: This is where I first found success in college.  After struggling early on, this class was a major turning point, and I knew I had found my subject.
+* **Thermodynamics 2**: This is where I met Dr. Dan Fisher, who showed me I could be very excited about this industry, and he became my life-long mentor right at that moment in Engineering South.
+* **Computational Heat Transfer**: Although I had been using coding for my school work for a while, this class reinforced the way I could use coding for physical modeling applications.
+* **Indoor Environmental System Design 1, 2, and Advanced Thermal Systems**: The design aspects in these classes taught me real-world details and assumptions when sizing an HVAC system or pumping configuration that are still key when I am writing or reviewing models or code.
+* **Advanced Thermodynamics (3)**: In this class, we were taught how to go back to the fundamentals of thermodynamics to dive deeper than ever into the theory, which solidified my understanding of many thermodynamic topics.
 
 ## Groundwork
 
 Throughout my school, and in my work today, I regularly work on projects related to ground heat transfer.
-I have built a simulation model for foundation heat exchangers that utilizes an efficient 3D grid for the ground, detailed grid around the pipe and fluid, transport delay, dual time step, and zone coupling.
+I have built a [simulation model](https://doi.org/10.1080/10789669.2013.774887) for foundation heat exchangers that utilizes an efficient 3D grid for the ground, detailed grid around the pipe and fluid, transport delay, dual time step, and zone coupling.
 I have integrated ground models into EnergyPlus that can perform basement and slab heat transfer without the need for preprocessing.
-I have worked on multiple ground heat exchanger studies, and continue to contribute to ground heat transfer sizing and simulation research both at NREL and as a member of the Center for Integrated Building Science.
+I have worked on multiple ground heat exchanger studies, and continue to contribute to ground heat transfer sizing and simulation research projects such as [GHEDesigner](https://github.com/BETSRG/GHEDesigner) both at NREL and as a member of the Center for Integrated Building Science.
 
 ## Plant Refactors
 
@@ -57,12 +57,12 @@ I was a part of the team who collapsed this down into:
 This effort required learning intimate details of the simulation logic and history for central plants, and drastically reduced the amount of plant code.
 With this, plus the added SetComponentFlowRate functionality, the number of central plant defects dropped incredibly low.
 
-After joining NREL, I also led the effort to collect all the various plant components into a single base class PlantComponent.
+After joining NREL, I also led the effort to collect all the various plant components into a single base class [PlantComponent](https://github.com/NREL/EnergyPlus/blob/542d46babe10b7f4c4ea9e41d5e1d15357e4ba44/src/EnergyPlus/PlantComponent.hh#L59).
 This required designing the base class, holding multiple hackathon sessions, integrating dozens of branches from different developers, modifying the interface, testing, and polishing it all up.
 
 ## Shipping
 
-As part of the "MPACT" project, I extended EnergyPlus to simulate ships, or in other words, buildings that move and rotate.
+As part of the "MPACT" project, I extended EnergyPlus to simulate ships, or in other words, buildings that move and rotate ([PR #6188](https://github.com/NREL/EnergyPlus/pull/6188)).
 This involved changing the simulation engine for solar and other geometry calculations and also adding a water boundary condition to wall surfaces.
 The project was highly successful, and was accompanied by actual experimental validation of a ship room, where the EnergyPlus model matched very well.
 
@@ -74,7 +74,7 @@ I implemented the plant loop heat pump object based on the EIR formulation, and 
 ## One Coil to Rule Them All
 
 As EnergyPlus has evolved, a large number of coil objects have been added, with various capabilities.
-This is partly due to budget limitations, as it was cheaper to simply bolt on a new object rather then surgically enhance an existing object.
+This is partly due to budget limitations, as it was cheaper to simply bolt on a new object rather than surgically enhance an existing object.
 During my time leading EnergyPlus, I coordinated multiple efforts, along with both in-person and virtual hackathons, to build out a single Coil:Cooling:DX object that aims to replace all the other coils.
 This required developing a deep understanding of coil physics and modeling strategies, understanding how the flow and control logic is communicated between the coil, parent objects, and fluid loops, and also furthering my understanding of coil sizing and rating.
 This new object is being used, and in the future, I would love to see the other coils be deprecated in favor of moving toward the one coil to rule them all.
@@ -85,9 +85,40 @@ Alright, this is a fun one.
 Around 2020, my son and I decided to make an incredibly detailed model of our own house.
 We measured every wall and window down to the nearest inch or so, and I translated this into a CAD model (LibreCAD) that also included height information for the various heights in our house.
 I then took this three-dimensional data of the house and made a Python project that could generate EnergyPlus inputs from this dataset.
-I moved this model onto GitHub, added a GitHub Action runner that would automatically download EnergyPlus, generate the input file, and run it.
+I moved this model onto [GitHub](https://github.com/okielife/Emerald), added a GitHub Action runner that would automatically download EnergyPlus, generate the input file, and run it.
 
 With this running, I then added HVAC data, schedule information, thermostat control, material properties, and more, to create a decent model of our house.
 Next was taking 2019 utility data, chopping it and reforming it into calendar month energy use values; and taking 2019 weather data from a local site, and processing it into EnergyPlus input weather data.
-The energy comparison between EnergyPlus and utility bills was very good, and over time I realized I had forgotten things, that I went back and added to the model (who knew I had a water heater in a closet?).
-The results seemingly got better and better as I narrowed in my model with more and more data.
+The energy comparison between EnergyPlus and utility bills was quite good, and over time I realized I had forgotten things that I went back and added to the model (I forgot I had a water heater?).
+Here is one snapshot of the comparison:
+
+<pre style="font-size:12px;font-family:monospace">
+                                     Comparing E+ to Actual (RMSE = 836.0253521873605)                                  
+  4000 +------------------------------------------------------------------------------------------------------------+   
+       |         +                   +                   +                  +                   +                   |   
+  3500 |-+                                                                                           Actual *******-|   
+       |                                                                                         EnergyPlus ####### |   
+       |                                                                  *****                                     |   
+  3000 |-+                                                       ############# *****                              +-|   
+       |****                                                  ###****         ##    ***                             |   
+  2500 |####********                                       ###**                ###    **                      ***##|   
+       |    ##########***                              ####*                       ##    **              ****#####  |   
+  2000 |-+            ##########                  #####                              ########################     +-|   
+       |                     ***##################                                           **   ***               |   
+       |                        ****    *****                                                  ***                  |   
+  1500 |-+                          ****                                                                          +-|   
+       |                                                                                                            |   
+  1000 |-+                                                                                                        +-|   
+       |                                                                                                            |   
+       |                                                                                                            |   
+   500 |-+                                                                                                        +-|   
+       |         +                   +                   +                  +                   +                   |   
+     0 +------------------------------------------------------------------------------------------------------------+   
+                 2                   4                   6                  8                   10                  12  
+</pre>
+
+The results got better and better as I narrowed in my model with more and more real life data.
+I should note that I did not adjust do any manual fidgeting with the data for this comparison.
+This input file is based purely on physical things that I know about my house, based on equipment labels and data lookups.
+I am quite excited about how well it matched without any tuning knobs at all, and I anticipate that I have still forgotten some detail that could narrow it even further.
+

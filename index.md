@@ -3,8 +3,19 @@ layout: home
 title: Edwin An Overview
 ---
 
-This web-based CV attempts to capture my background, skills, interests, and excitement around coding, software, and building science.
-It is a living document, and will be updated as needed, hopefully with beautiful pictures and plots since it is mostly a lot of text right now.
+<table>
+<tr>
+<td style="width: 160px; vertical-align: top;">
+  <img src="{{ '/assets/images/self.jpg' | relative_url }}" alt="A photo of me" style="width: 150px; border-radius: 50%;">
+</td>
+<td>
+  <p>
+    This web-based CV attempts to capture my background, skills, interests, and excitement around coding, software, and building science.
+	  It is a living document, and will be updated as needed, hopefully with beautiful pictures and plots since it is mostly a lot of text right now.
+  </p>
+</td>
+</tr>
+</table>
 
 ## Me.Summarize()
 

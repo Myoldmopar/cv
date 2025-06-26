@@ -8,7 +8,7 @@ This page offers some targeted highlights of work, or work-tangential, tasks, es
 
 <ul>
   <li><a href="#operating-systems">Operating Systems</a> (Starting at the Hardware Level)</li>
-  <li><a href="#pythonic">Pythonic</a> (A Sumamry of Python Fun)</li>
+  <li><a href="#pythonic">Pythonic</a> (A Summary of Python Fun)</li>
   <li><a href="#localization">Localization</a> (Un EnergyPlus Seguro Para Subprocesos)</li>
   <li><a href="#duolingo">Duolingo</a> (EnergyPlus Fortran to C++ Conversion)</li>
   <li><a href="#debugging">Debugging</a> (My Debugging Lifestyle)</li>
@@ -35,7 +35,7 @@ I still regularly open my VMs of DOS, Windows 3.1, and Windows 98 to dabble thro
   - Although I do love a good coding IDE, I am also quite happy with Vim open and a gdb session running to debug my code.
 - Windows
   - Although I don't remember installing Windows 3.1 on hardware, I definitely used it on my family's second home PC (The first was MS-DOS 6.22 with DOS Shell).
-  - I do remember installing windows 95 on my family's machine and helping others install it
+  - I do remember installing Windows 95 on my family's machine and helping others install it
   - Windows 2000 is my favorite non-Linux operating system
   - OK, back to reality, yes, I use Windows all the time.  I develop EnergyPlus and other tools on it to ensure Windows platform compatability.
 - Mac
@@ -97,7 +97,7 @@ This led to a series of Python-backed tests that are also executed alongside all
 
 I have experienced a lot of personal transition around software testing, which predates my current role of leading EnergyPlus.
 In the early days I would use local VM snapshots to test my own software projects on "clean" images.
-In the middle ages, Docker and Travis became my tools of choice, and I was fascinated by the integration of Travis and GitHub.
+In the Middle Ages, Docker and Travis became my tools of choice, and I was fascinated by the integration of Travis and GitHub.
 I used them heavily along with other code analysis platforms like Code Climate to grade my codebase, and Coveralls to report on code coverage.
 In modern times, I use GitHub Actions extensively in all my public and private projects and often write custom workflows to handle multi-platform builds, matrix testing, artifact publishing, releasing to PyPi, and more.
 
@@ -155,7 +155,7 @@ As I joined the EnergyPlus team, I was introduced to StarTeam, and found it to b
 
 Around 2011 I found Git, and GitHub, and have not looked back.
 I use Git on the command line essentially every day on my life, and I am comfortable with nearly every repository "situation" out there.
-Tools like gitk, TortoiseGit, and Github for Desktop are fine as well, but I’ve resolved every possible merge conflict scenario and know the ins and outs of rebase, bisect, submodules, and release branching right from the terminal.
+Tools like gitk, TortoiseGit, and GitHub for Desktop are fine as well, but I’ve resolved every possible merge conflict scenario and know the ins and outs of rebase, bisect, submodules, and release branching right from the terminal.
 
 ## DLL Heck
 
@@ -169,7 +169,7 @@ I routinely use `otool`, `install_name_tool`, `ldd`, and `Dependency Walker` to 
 When I took over EnergyPlus development, the documentation was contained in very heavy Word documents that had to be manually merged together whenever changes were made by a developer.
 Since the team was hoping to continue to distribute PDFs with the package, this could not continue, so we evaluated options.
 My initial hope was for LaTeX, because of course I loved it, but also because it would allow multiple collaborators on the source, and also provide meaningful warnings when there were build issues.
-This was originally rejected and we pushed toward a Markdown-based documentation system, which was better than Word, but the idea of basing built PDFs purely off of Markdown was a difficult ask at the time, so this only lasted a couple years.
+This was originally rejected, and we pushed toward a Markdown-based documentation system, which was better than Word, but the idea of basing built PDFs purely off of Markdown was a difficult ask at the time, so this only lasted a couple of years.
 I then got my wish of moving toward LaTeX, and it has been a stable solution for nearly ten years.
 Moving forward, I am hopeful that we eliminate the PDFs from each package and instead focus on hosted docs such as ReadTheDocs so that we can actually move back away from LaTeX and rely on industry standard tools for our documentation.
 

@@ -23,13 +23,17 @@ permalink: /career/
 - Research tasks included:
   - Contributing to a complete re-write of the EnergyPlus central plant simulation, including solution algorithms, pump model re-work, and updating component model design
   - Developing a generalized horizontal ground heat exchanger model that includes interaction with a basement zone, specifically for use with foundation heat exchangers
-  - Performing experimental measurement and modeling of transport delay phenomena in piping systems. 
+  - Performing experimental measurement and modeling of transport delay phenomena in piping systems
   - Working closely with the Center for the Built Environment at University of California, Berkeley, providing simulation support for Underfloor Air Distribution System research with EnergyPlus
+  - Sometimes mowing the lawn at the hybrid ground source research facility
 
 ## Engineering Consultant
 - Oak Ridge National Laboratory
 - Fall 2007 & Summer 2009
-- Utilized EnergyPlus to investigate wall constructions for residential applications, including frame walls, solid wood walls, and phase change materials.
+- Tasks included:
+  - Traveling to ORNL for design and kickoff sessions
+  - Utilizing EnergyPlus to investigate wall constructions for residential applications, including frame walls, solid wood walls, and phase change materials
+  - Building up a parametric workflow to test a wide variety of construction configurations and material properties, parsing outputs and collecting into tables and plots for publication
 
 ## Engineering Intern
 - Specific Systems, Tulsa, OK
