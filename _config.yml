@@ -31,8 +31,10 @@ plugins:
   - jekyll-feed
 
 header_pages:
- - career.md
  - school.md
- - publications.md
+ - career.md
  - coding.md
- - hobbies.md
+ - science.md
+ - development.md
+ - outputs.md
+ - activities.md
