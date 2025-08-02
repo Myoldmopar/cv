@@ -39,12 +39,12 @@ I still regularly open my VMs of DOS, Windows 3.1, and Windows 98 to dabble thro
   - Windows 2000 is my favorite non-Linux operating system
   - OK, back to reality, yes, I use Windows all the time.  I develop EnergyPlus and other tools on it to ensure Windows platform compatability.
 - Mac
-  - Yes, I use Mac all the time.  I develop EnergyPlus on my ARM Mac, and ensure platform compatability as well.
+  - Yes, I use Mac all the time.  I develop EnergyPlus on my ARM Mac, and ensure platform compatibility as well.
 
 ## Pythonic
 
 I created and maintain the Python API integration for EnergyPlus, transforming how users and researchers interact with the simulation engine.
-Before my work, EnergyPlus has a built-in, but highly limited scripting language called the EnergyPlus Runtime Language. 
+Before my work, EnergyPlus had a built-in, but highly limited scripting language called the EnergyPlus Runtime Language. 
 But now, EnergyPlus supports powerful runtime control through Python callbacks, user-defined functions, and real-time interaction via the plugin system.
 
 This meant designing a stable API layer on top of the EnergyPlus core, managing memory, thread safety and type safety across the C++/Python boundary, and navigating CPython’s internals. 
@@ -85,6 +85,19 @@ Way back in 2009-ish, when we used Compaq Visual Fortran as our IDE of choice, i
 To remedy this, I created a small script that would take a couple inputs, "hijack" the keyboard, and inject a series of keystrokes that would rapidly fill out as many variable entries as needed.
 More recently, I built a web-based debug visualizer that connects to two running debug sessions through a REST-style interface, controlling the debug sessions and also gathering data from the debugged programs.
 The web visualizer also compares the data from the two programs to show whether data matches or not.
+
+Recently I was also brought onto a project to assist with integrating an existing component model into EnergyPlus.
+The component model was written in Python, but for a tight coupling with EnergyPlus, it needed to be integrated into the C++ codebase.
+After a process of trimming down the Python project, the code was converted to C++.
+After this conversion, the C++ version produced results that were close, but not close enough, to the original Python version.
+Debugging the two essentially identical codebases was a major challenge, and I spent a lot of time jumping between the codebases inside debuggers, and constantly stepping and restarting sessions.
+I came up with a wild solution, where I created a web server in Python that would interact with both running codebases while they were in debug mode.
+A simple web server with a REST API allowed me to send commands to the two running programs and keep them in sync, while also receiving data from the two programs and visualizing them on a web page.
+The web page eventually also included the ability to compare to the two results in a visual table that was color coded to spot the differences.
+This work enabled me to quickly identify the causes of multiple subtle differences between the two codebases, and ultimately get agreement so that the code could move toward EnergyPlus implementation.
+This is a snippet of the web page with some data from both codebases, along with controls:
+
+![DiffLogger]({{ site.baseurl }}/assets/images/DiffLogger.png)
 
 ## Testing
 

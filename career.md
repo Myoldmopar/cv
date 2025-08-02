@@ -16,7 +16,10 @@ permalink: /career/
   - developing translators from raw performance data into OpenStudio components for the Technology Performance EXchange [TPEX](https://www.energy.gov/eere/buildings/technology-performance-exchange),
   - working on defects and an API for the Standard Energy Efficiency Database [SEED](https://www.energy.gov/eere/buildings/standard-energy-efficiency-data-seed-platform)
   - developed code and structures for the ground heat exchanger design library [GHEDesigner](https://www.osti.gov/biblio/1968567)
-
+- While I have not been in a management position, my role has included leading the technical direction of EnergyPlus, mentoring junior developers, and managing the development team to ensure timely delivery of features and bug fixes.
+  - In 2019-2020, I oversaw technical work from a team of five performers at NREL who contributed at least part-time to EnergyPlus development
+  - In other years, the team has been smaller, varying from one to four developers, but I have always been responsible for the technical direction and management of the team.
+ 
 ## Graduate Assistant
 - Oklahoma State University
 - January 2006-May 2013
