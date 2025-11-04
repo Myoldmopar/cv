@@ -64,6 +64,7 @@ I've been coding since 1990.  I have always loved it, and it became a thrill to 
 		I was first introduced to VBA during my first semester of college, where it was part of a formal course. 
 		I quickly found it to be a powerful tool, especially for projects involving data manipulation and reporting, thanks to its tight integration with Excel. 
 		I ended up using VBA extensively across many assignments and personal projects, particularly for solving 2D finite difference problems in both heat transfer and fluid flow.
+        One of my favorite projects around VBA was in 2025, when I coerced VBA to call and interact with the EnergyPlus API and provide user feedback on the sheet.  So many skills I might never use again lol.
       </p>
     </div>
     <div id="vbnet">
@@ -111,6 +112,7 @@ I've been coding since 1990.  I have always loved it, and it became a thrill to 
     <button data-tab="ruby">Ruby</button>
     <button data-tab="python">Python</button>
     <button data-tab="c">C/C++</button>
+    <button data-tab="c_sharp">C#</button>
     <button data-tab="modelica">Modelica</button>
     <button data-tab="interop2">Interop (2)</button>
   </div>
@@ -137,6 +139,14 @@ I've been coding since 1990.  I have always loved it, and it became a thrill to 
 		Although I first used C and C++ in college, my involvement deepened significantly during the transition of EnergyPlus from Fortran to C++. 
 		I led numerous training sessions for the development team and have since undertaken extensive refactoring efforts to leverage modern C++ features. 
 		Today, I use C++ daily for EnergyPlus development and frequently assist other developers by answering questions related to defects and new features.
+      </p>
+    </div>
+    <div id="c_sharp">
+      <p><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">C#</a></p>
+      <p>
+		I briefly touched C# back when I was learning VB.Net, but at the time did not have a major need to develop in the language, so it was set aside.
+        In 2025, I started working on C# projects again at Trane.
+        In addition to just coming up to speed on them, I am now gaining an understanding of the package ecosystem and build workflows.
       </p>
     </div>
     <div id="modelica">

@@ -20,38 +20,18 @@ title: Edwin An Overview
 ## Me.Summarize()
 
 - I spent my [school]({{ site.baseurl }}{% link school.md %}) years learning everything I could about heat transfer, fluid flow, building energy, and learning how to apply computational methods to solve problems.
-- I spend my [work]({{ site.baseurl }}{% link career.md %}) hours managing the building energy simulation software [EnergyPlus](https://energyplus.net) for the United States Department of Energy via the National Renewable Energy Laboratory.
+- I spend my [work]({{ site.baseurl }}{% link career.md %}) hours handling a variety of tasks for building energy simulation software, currently working for Trane Technologies.
 - I am proficient at many [programming languages]({{ site.baseurl }}{% link coding.md %}), but my favorites are Python, C++, Fortran, and LOLCode.
 - I have a strong knowledge of building [science]({{ site.baseurl }}{% link science.md %}) including building heat transfer and fluid flow, controls, HVAC equipment simulation, central plant simulation, ground heat transfer, simulation weather data, and more.
 - I have worked on a lot of interesting software development [projects]({{ site.baseurl }}{% link development.md %}), both personal and professional.
 - I have been an author on a reasonable amount of [Publications]({{ site.baseurl }}{% link outputs.md %}), although I would love to write more if time allowed.
 - I am [active]({{ site.baseurl }}{% link activities.md %}) in ASHRAE including serving in multiple committee roles.
 
-## My Average Work Day
+## Bucket List
 
-This does not represent any one day in particular, as my work life is very dynamic from day to day and quarter to quarter.
-But consider it a decent representation of my average day :)
-
-**08:00** – Check up on the EnergyPlus repo  
-> Assess open issues and pull requests, triage requests, prioritize daily activities.
-
-**09:00** – Code Review  
-> Review code changes, suggest refactors, approve or reject contributions.
-
-**10:30** – Build & Test
-> Build EnergyPlus for dozens of branches, run tests and regressions, evaluate changes.
-
-**12:30** – Support Channels
-> Respond to user and developer questions across the entire EnergyPlus domain.
-
-**13:00** – Team & Project Management
-> Write proposals and statements of work, approve deliverables, run meetings, handle financial planning.
-
-**14:00** – Strategic Planning
-> Work with DOE and industry to align EnergyPlus with high-impact building industry needs.
-
-**15:00** – Ecosystem Tools
-> Manage related tools, primarily Python-based, supporting the broader EnergyPlus ecosystem.
-
-**16:00** – Feature & Bug Work
-> Contribute directly to EnergyPlus codebase—fixing bugs, implementing features.
+Some of the big (work, or work-tangential) things I'd like to accomplish include:
+- Contributing to more open source projects, because I have benefited so much from them over the years.
+- Average telling at least 2 people per week that I run Linux natively on my machine and have since 2010.
+- `pip install energyplus`
+- Make a decent video game out of the 23 different attempts I've made there.  It will need to interop between VB.Net, VBA, Python, Lua, and C++, because I've tried to make games in all of them.
+- Figure out how to make my refrigerator temperature sensor wires go through the fridge door seal without interfering with moisture invasion and frost build-up.

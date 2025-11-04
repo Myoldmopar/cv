@@ -4,10 +4,19 @@ title: Work
 permalink: /career/
 ---
 
+## Lead Systems Modeling Engineer
+- Trane Technologies
+- September 2025 - Present
+- I am contributing to the new Trane Trace engine, which is based on the upstream EnergyPlus engine.  Although I just recently started (as of this writing), I have been able to wield by experience and expertise to support:
+  - CI and testing framework improvements
+  - Modeling enhancements such as integrating models, bug fixes, and refactors
+  - Implementing software testing strategies
+- Through this work, I have brought my .Net knowledge back up to speed while contributing to C# projects.
+
 ## Research Engineer
 - National Renewable Energy Laboratory
-- May 2013-Present
-- I'm having a great time leading development efforts on the building simulation tool EnergyPlus for the National Renewable Energy Laboratory.  Since taking over technical development, I have overseen:
+- May 2013 - September 2025
+- I led development efforts on the building simulation tool EnergyPlus for the National Renewable Energy Laboratory.  I oversaw:
   - the conversion of the codebase from Fortran to C++ ([DOE Report](https://www.energy.gov/eere/buildings/articles/energyplus-overcomes-computer-language-barrier), [Initial C++ Commit on GitHub](https://github.com/NREL/EnergyPlus/commit/e635eded3dfbbc1c7b5e5d2b78022ce13b855931)),
   - the open sourcing onto GitHub ([License](https://github.com/NREL/EnergyPlus/blob/develop/LICENSE.txt)), 
   - the effort to make EnergyPlus a thread-safe library ([One such example PR](https://github.com/NREL/EnergyPlus/pull/8659)), 
@@ -16,7 +25,7 @@ permalink: /career/
   - developing translators from raw performance data into OpenStudio components for the Technology Performance EXchange [TPEX](https://www.energy.gov/eere/buildings/technology-performance-exchange),
   - working on defects and an API for the Standard Energy Efficiency Database [SEED](https://www.energy.gov/eere/buildings/standard-energy-efficiency-data-seed-platform)
   - developed code and structures for the ground heat exchanger design library [GHEDesigner](https://www.osti.gov/biblio/1968567)
-- While I have not been in a management position, my role has included leading the technical direction of EnergyPlus, mentoring junior developers, and managing the development team to ensure timely delivery of features and bug fixes.
+- My role included leading the technical direction of EnergyPlus, mentoring junior developers, and managing the development team to ensure timely delivery of features and bug fixes.
   - In 2019-2020, I oversaw technical work from a team of five performers at NREL who contributed at least part-time to EnergyPlus development
   - In other years, the team has been smaller, varying from one to four developers, but I have always been responsible for the technical direction and management of the team.
  

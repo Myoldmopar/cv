@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Dr. Edwin Lee, PhD
-email: edwin dot lee at NREL dot gov
+email: edwin.lee at tranetechnologies.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am a practicing mechanical engineer who just happens to spend most
   of his time writing Python and C++ code.  I am interested in all things
